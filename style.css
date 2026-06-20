@@ -30,6 +30,7 @@ body {
   color: var(--gray-800);
   background: var(--white);
   line-height: 1.6;
+  padding-top: 72px; /* espaço para o topbar fixo */
 }
 
 img { max-width: 100%; display: block; }
@@ -104,13 +105,16 @@ ul { list-style: none; }
 /* ─── TOP BAR ──────────────────────────────────────── */
 .topbar {
   background: var(--red);
-  height: 88px;
-  min-height: 88px;
+  height: 72px;
+  min-height: 72px;
   flex-shrink: 0;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 100;
-  will-change: transform;
+  box-shadow: 0 0 0 rgba(0,0,0,0);
+  transition: box-shadow 1.20s cubic-bezier(.22,1,.36,1);
 }
 
 .topbar__inner {
@@ -118,17 +122,16 @@ ul { list-style: none; }
   align-items: center;
   justify-content: space-between;
   gap: 32px;
-  height: 88px;
+  height: 72px;
 }
 
 .topbar__logo { display: flex; align-items: center; flex-shrink: 0; }
 
 .topbar__logo-img {
-  height: 55px;
+  height: 46px;
   width: auto;
   display: block;
   object-fit: contain;
-  padding: 3px 0;
 }
 
 .topbar__search {
@@ -209,13 +212,20 @@ ul { list-style: none; }
   background: var(--white);
   box-shadow: 0 6px 24px rgba(0,0,0,.15);
   position: sticky;
-  top: 88px;
+  top: 72px;
   z-index: 99;
   transform: translateY(0);
-  transition: transform .32s cubic-bezier(.4,0,.2,1);
+  margin-bottom: 0;
+  transition: transform 1.20s cubic-bezier(.22,1,.36,1),
+              margin-bottom 1.20s cubic-bezier(.22,1,.36,1);
 }
 .navbar--hidden {
-  transform: translateY(-100%);
+  transform: translateY(calc(-100% - 72px));
+  margin-bottom: calc(-1 * var(--navbar-h));
+}
+
+.topbar--shadowed {
+  box-shadow: 0 6px 24px rgba(0,0,0,.15);
 }
 
 .navbar__inner {
@@ -1028,7 +1038,7 @@ ul { list-style: none; }
 }
 
 .topbar     { animation: anim-slide-down .55s cubic-bezier(.22,1,.36,1) both; }
-.navbar     { animation: anim-slide-down .55s .1s cubic-bezier(.22,1,.36,1) both; }
+.navbar     { animation: anim-fade-in .55s .1s ease both; }
 .top-banner { animation: anim-fade-in .7s .18s ease both; }
 .marquee    { animation: anim-fade-in .5s .32s ease both; }
 .page-header,

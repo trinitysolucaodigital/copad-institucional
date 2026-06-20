@@ -6,16 +6,20 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   /* ── NAVBAR HIDE ON SCROLL ────────────────────────── */
-  const navbar = document.getElementById('navbar');
+  const navbar  = document.getElementById('navbar');
+  const topbar  = document.querySelector('.topbar');
   let lastScrollY = 0;
   window.addEventListener('scroll', () => {
     const y = window.scrollY;
     if (y <= 10) {
       navbar.classList.remove('navbar--hidden');
+      topbar.classList.remove('topbar--shadowed');
     } else if (y > lastScrollY + 6) {
       navbar.classList.add('navbar--hidden');
+      topbar.classList.add('topbar--shadowed');
     } else if (y < lastScrollY - 6) {
       navbar.classList.remove('navbar--hidden');
+      topbar.classList.remove('topbar--shadowed');
     }
     lastScrollY = y;
   }, { passive: true });
