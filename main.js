@@ -5,46 +5,6 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  /* ── NAVBAR HIDE ON SCROLL ────────────────────────── */
-  const navbar  = document.getElementById('navbar');
-  const topbar  = document.querySelector('.topbar');
-  let lastScrollY = 0;
-  window.addEventListener('scroll', () => {
-    const y = window.scrollY;
-    if (y <= 10) {
-      navbar.classList.remove('navbar--hidden');
-      topbar.classList.remove('topbar--shadowed');
-    } else if (y > lastScrollY + 6) {
-      navbar.classList.add('navbar--hidden');
-      topbar.classList.add('topbar--shadowed');
-    } else if (y < lastScrollY - 6) {
-      navbar.classList.remove('navbar--hidden');
-      topbar.classList.remove('topbar--shadowed');
-    }
-    lastScrollY = y;
-  }, { passive: true });
-
-  /* ── BURGER MENU ───────────────────────────────────── */
-  const burger = document.getElementById('burger');
-  const menu   = document.querySelector('.navbar__menu');
-
-  burger.addEventListener('click', () => {
-    menu.classList.toggle('open');
-    const open = menu.classList.contains('open');
-    burger.setAttribute('aria-expanded', open);
-    // Animate burger spans
-    const spans = burger.querySelectorAll('span');
-    if (open) {
-      spans[0].style.transform = 'translateY(7px) rotate(45deg)';
-      spans[1].style.opacity   = '0';
-      spans[2].style.transform = 'translateY(-7px) rotate(-45deg)';
-    } else {
-      spans[0].style.transform = '';
-      spans[1].style.opacity   = '';
-      spans[2].style.transform = '';
-    }
-  });
-
   // Mobile dropdown toggle
   document.querySelectorAll('.has-dropdown > a').forEach(link => {
     link.addEventListener('click', (e) => {
@@ -53,18 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
         link.parentElement.classList.toggle('open');
       }
     });
-  });
-
-  // Close menu on outside click
-  document.addEventListener('click', (e) => {
-    if (!navbar.contains(e.target)) {
-      menu.classList.remove('open');
-      burger.setAttribute('aria-expanded', false);
-      const spans = burger.querySelectorAll('span');
-      spans[0].style.transform = '';
-      spans[1].style.opacity   = '';
-      spans[2].style.transform = '';
-    }
   });
 
   /* ── TOP BANNER ROTATIVO ───────────────────────────── */
@@ -387,7 +335,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ── SMOOTH ACTIVE NAV ─────────────────────────────── */
   const sections = document.querySelectorAll('section[id]');
-  const navLinks = document.querySelectorAll('.navbar__menu > li > a');
+  const navLinks = document.querySelectorAll('.topbar__menu > li > a');
 
   const sectionObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {

@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 session_start();
 
 if (!empty($_SESSION['coaph_user'])) {
@@ -299,7 +299,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <ul class="navbar__menu">
         <li><a href="index.html">Início</a></li>
         <li class="has-dropdown">
-          <a href="#">Quem Somos <span class="arrow">▾</span></a>
+          <a href="#">A COPAD <span class="arrow">▾</span></a>
           <ul class="dropdown">
             <li><a href="sobre.html">Sobre</a></li>
             <li><a href="sedes.html">Nossas Sedes</a></li>
@@ -307,20 +307,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           </ul>
         </li>
         <li class="has-dropdown">
-          <a href="#">Área do Cooperado <span class="arrow">▾</span></a>
+          <a href="#">serviços <span class="arrow">▾</span></a>
           <ul class="dropdown">
             <li><a href="pre-cadastro.html">Pré-Cadastro</a></li>
             <li><a href="https://areadocooperado.coaph.com.br/area_restrita_login.php" class="js-fade-link">Portal do Cooperado</a></li>
             <li><a href="termo-adesao.html">Termo de Adesão</a></li>
           </ul>
         </li>
-        <li><a href="governanca.html">Governança Cooperativa</a></li>
-        <li><a href="fala-do-presidente.html">Fala do Presidente</a></li>
-        <li><a href="clube-coaph.html">Clube Coaph+</a></li>
-        <li><a href="nep.html">NEP</a></li>
+        
+        
+        
+        
         <li><a href="blog.html">Blog</a></li>
         <li class="has-dropdown">
-          <a href="#">Fale Conosco <span class="arrow">▾</span></a>
+          <a href="#">Contato <span class="arrow">▾</span></a>
           <ul class="dropdown">
             <li><a href="trabalhe-conosco.html">Trabalhe Conosco</a></li>
             <li><a href="ouvidoria.html">Ouvidoria</a></li>
@@ -486,3 +486,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   </script>
 </body>
 </html>
+
+
+
+
+
+
