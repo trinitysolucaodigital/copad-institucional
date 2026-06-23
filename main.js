@@ -656,3 +656,27 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
+/* ── PREVIEW MODE — bloqueia toda navegação ─────────── */
+(function () {
+  // Bloqueia cliques em qualquer <a href> que navegue para outra página
+  document.addEventListener('click', function (e) {
+    const link = e.target.closest('a[href]');
+    if (!link) return;
+    const href = link.getAttribute('href');
+    if (href && href.startsWith('#')) return; // mantém âncoras internas
+    e.preventDefault();
+    e.stopImmediatePropagation();
+  }, true);
+
+  // Bloqueia envio de formulários
+  document.addEventListener('submit', function (e) {
+    e.preventDefault();
+    e.stopImmediatePropagation();
+  }, true);
+
+  // Cursor indicativo em links desativados
+  const style = document.createElement('style');
+  style.textContent = 'a[href]:not([href^="#"]) { cursor: not-allowed !important; pointer-events: all !important; }';
+  document.head.appendChild(style);
+}());
