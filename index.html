@@ -10,74 +10,46 @@
   <link rel="stylesheet" href="style.css?v=18" />
 </head>
 <body>
-
-  <!-- TOP BAR -->
-  <div class="topbar">
-    <div class="container topbar__inner">
-      <a href="#" class="topbar__logo">
-        <img src="assets/logotipo/coaph logo branco.png" alt="COAPH" class="topbar__logo-img" />
-      </a>
-      <div class="topbar__search">
-        <input type="text" placeholder="Pesquisar..." />
-        <button aria-label="Buscar">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-        </button>
-      </div>
-      <div class="topbar__actions">
-        <a href="login.php" aria-label="Minha Conta" class="topbar__action-icon-btn">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M6 20v-2a6 6 0 0 1 12 0v2"/></svg>
+  <!-- INFO BAR -->
+  <div class="infobar">
+    <div class="container infobar__inner">
+      <span class="infobar__brand">COOPERATIVA DE PROFISSIONAIS ADMINISTRATIVOS</span>
+      <div class="infobar__contact">
+        <a href="mailto:copadcomercial@gmail.com" class="infobar__contact-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+          copadcomercial@gmail.com
         </a>
-        <a href="#avisos" aria-label="Notificações" class="topbar__action-icon-btn">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
-          <span class="topbar__action-badge"></span>
-        </a>
-        <a href="#favoritos" aria-label="Favoritos" class="topbar__action-icon-btn">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        <span class="infobar__sep">|</span>
+        <a href="tel:08000000000" class="infobar__contact-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.85a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          (85) 0800-0000
         </a>
       </div>
     </div>
   </div>
 
-  <!-- NAVBAR -->
-  <nav class="navbar" id="navbar">
-    <div class="container navbar__inner">
-      <ul class="navbar__menu">
-        <li><a href="#">Início</a></li>
-        <li class="has-dropdown">
-          <a href="#">Quem Somos <span class="arrow">▾</span></a>
-          <ul class="dropdown">
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="sedes.html">Nossas Sedes</a></li>
-            <li><a href="cooperativismo.html">Cooperativismo</a></li>
-          </ul>
-        </li>
-        <li class="has-dropdown">
-          <a href="#">Área do Cooperado <span class="arrow">▾</span></a>
-          <ul class="dropdown">
-            <li><a href="pre-cadastro.html">Pré-Cadastro</a></li>
-            <li><a href="https://areadocooperado.coaph.com.br/area_restrita_login.php?_gl=1*1hkwl6b*_ga*NDMzODg0NTgwLjE3ODExOTA2NzQ.*_ga_H7B73YQZ11*czE3ODE2Mzg3MjIkbzE1JGcxJHQxNzgxNjQwNzI2JGo5JGwwJGgw*_ga_W4ES0C9GGL*czE3ODE2Mzg3MjIkbzE1JGcxJHQxNzgxNjQwNzI2JGo5JGwwJGgw" class="js-fade-link">Portal do Cooperado</a></li>
-            <li><a href="termo-adesao.html">Termo de Adesão</a></li>
-          </ul>
-        </li>
-        <li><a href="governanca.html">Governança Cooperativa</a></li>
-        <li><a href="fala-do-presidente.html">Fala do Presidente</a></li>
-        <li><a href="clube-coaph.html">Clube Coaph+</a></li>
-        <li><a href="nep.html">NEP</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li class="has-dropdown">
-          <a href="#">Fale Conosco <span class="arrow">▾</span></a>
-          <ul class="dropdown">
-            <li><a href="trabalhe-conosco.html">Trabalhe Conosco</a></li>
-            <li><a href="ouvidoria.html">Ouvidoria</a></li>
-            <li><a href="canal-de-etica.html">Canal de Ética</a></li>
-          </ul>
-        </li>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <a href="#" class="topbar__logo">
+        <img src="assets/logotipo/logo-copad-branca.webp" alt="COAPH" class="topbar__logo-img" />
+      </a>
+      <ul class="topbar__menu">
+        <li><span>Início</span></li>
+        <li><span>A COPAD</span></li>
+        <li><span>Serviços</span></li>
+        <li><span>Blog</span></li>
+        <li><span>Contato</span></li>
       </ul>
-      <button class="navbar__burger" id="burger" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="topbar__actions">
+        <a href="login.php" class="topbar__login-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          ÁREA DO COOPERADO
+        </a>
+      </div>
     </div>
-  </nav>
+  </div>
 
   <!-- TOP BANNER ROTATIVO -->
   <div class="top-banner" id="topBanner">
@@ -85,366 +57,364 @@
 
       <!-- Slide 1 -->
       <div class="top-banner__slide active" data-editable="top-banner">
-        <img src="assets/banners/inicio/rotativos/01.webp" alt="Banner 1" class="img--align-right" />
+        <img src="assets/banners/inicio/rotativos/banner-01.png" alt="Banner COAPH" class="img--align-right" />
         <div class="top-banner__content top-banner__content--dark">
           <div class="container">
-            <p class="top-banner__subtitle tb1__subtitle">SEJA BEM-VINDOS!</p>
-            <h2 class="top-banner__title tb1__title">Ficamos felizes<br>em ter <span style="color:#96020F">você</span><br><span>conosco!</span></h2>
-            <p class="top-banner__desc top-banner__desc--dark">Aqui, você faz parte de uma cooperativa que cuida de pessoas.</p>
+            <p class="top-banner__subtitle tb1__subtitle">GESTÃO DE PESSOAS.</p>
+            <h2 class="top-banner__title tb1__title">Organização de<br><span>Processos.</span></h2>
+            <p class="top-banner__desc top-banner__desc--dark">A cooperativa que conecta talentos administrativos às necessidades da sua organização.</p>
             <a href="#" class="top-banner__cta">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;min-width:16px"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-              Conte com a COAPH!
+              CONHEÇA NOSSOS SERVIÇOS
             </a>
           </div>
         </div>
       </div>
 
-      <!-- Slide 2 -->
-      <div class="top-banner__slide" data-editable="top-banner">
-        <img src="assets/banners/inicio/rotativos/03.webp" alt="Banner 2" />
-        <div class="top-banner__content top-banner__content--light">
-          <div class="container">
-            <svg class="tb2__icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="12" y2="17"/></svg>
-            <p class="top-banner__subtitle top-banner__subtitle--spaced">COMUNICADO IMPORTANTE</p>
-            <h2 class="top-banner__title">Atualização nas Cooperações</h2>
-            <p class="top-banner__desc">Informações relevantes sobre ajustes e atualizações em nossa rede de cooperações e parceiros de atendimento.</p>
-            <a href="#" class="top-banner__cta top-banner__cta--white">Saiba mais</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Slide 3 -->
-      <div class="top-banner__slide" data-editable="top-banner">
-        <img src="assets/banners/inicio/rotativos/02.webp" alt="Banner 3" />
-        <div class="top-banner__content top-banner__content--light">
-          <div class="container">
-            <p class="top-banner__subtitle top-banner__subtitle--spaced">Cuidado que se espalha, presença que faz a diferença</p>
-            <h2 class="top-banner__title">Onde estamos?</h2>
-            <p class="top-banner__desc">A COAPH está presente em diversas regiões, levando saúde e bem-estar para mais pessoas todos os dias.</p>
-            <div class="top-banner__stats">
-              <div class="top-banner__stat">
-                <strong>+250 MIL</strong>
-                <span>vidas cuidadas</span>
-              </div>
-              <div class="top-banner__stat-divider"></div>
-              <div class="top-banner__stat">
-                <strong>+30</strong>
-                <span>municípios atendidos</span>
-              </div>
-              <div class="top-banner__stat-divider"></div>
-              <div class="top-banner__stat">
-                <strong>+40</strong>
-                <span>anos de história</span>
-              </div>
-            </div>
-            <a href="#" class="top-banner__link">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
-              Veja todas as unidades e canais de atendimento.
-            </a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-    <button class="top-banner__arrow top-banner__arrow--prev" id="topBannerPrev" aria-label="Banner anterior">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
-    </button>
-    <button class="top-banner__arrow top-banner__arrow--next" id="topBannerNext" aria-label="Próximo banner">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
-    </button>
-    <div class="top-banner__dots">
-      <button class="top-banner__dot active" aria-label="Banner 1"></button>
-      <button class="top-banner__dot" aria-label="Banner 2"></button>
-      <button class="top-banner__dot" aria-label="Banner 3"></button>
-    </div>
-  </div>
-
-  <!-- MARQUEE STRIP -->
-  <div class="marquee" aria-hidden="true">
-    <div class="marquee__inner">
-      <div class="marquee__track">
-        <span class="marquee__item">Valorização Profissional</span><span class="marquee__sep">✦</span>
-        <span class="marquee__item">Segurança</span><span class="marquee__sep">✦</span>
-        <span class="marquee__item">Colaboração</span><span class="marquee__sep">✦</span>
-        <span class="marquee__item">Propósito</span><span class="marquee__sep">✦</span>
-        <span class="marquee__item">Evolução</span><span class="marquee__sep">✦</span>
-        <span class="marquee__item">Qualificação</span><span class="marquee__sep">✦</span>
-        <span class="marquee__item">Sustentabilidade</span><span class="marquee__sep">✦</span>
-        <span class="marquee__item">Pertencimento</span><span class="marquee__sep">✦</span>
-        <span class="marquee__item">Desenvolvimento</span><span class="marquee__sep">✦</span>
-        <span class="marquee__item">Cooperativismo</span><span class="marquee__sep">✦</span>
-        <span class="marquee__item">Valorização Profissional</span><span class="marquee__sep">✦</span>
-        <span class="marquee__item">Segurança</span><span class="marquee__sep">✦</span>
-        <span class="marquee__item">Colaboração</span><span class="marquee__sep">✦</span>
-        <span class="marquee__item">Propósito</span><span class="marquee__sep">✦</span>
-        <span class="marquee__item">Evolução</span><span class="marquee__sep">✦</span>
-        <span class="marquee__item">Qualificação</span><span class="marquee__sep">✦</span>
-        <span class="marquee__item">Sustentabilidade</span><span class="marquee__sep">✦</span>
-        <span class="marquee__item">Pertencimento</span><span class="marquee__sep">✦</span>
-        <span class="marquee__item">Desenvolvimento</span><span class="marquee__sep">✦</span>
-        <span class="marquee__item">Cooperativismo</span><span class="marquee__sep">✦</span>
-      </div>
     </div>
   </div>
 
   <!-- QUEM SOMOS / ABOUT -->
-  <section class="about" id="sobre">
-    <div class="container about__inner">
-      <div class="about__images">
-        <div class="about__mosaic">
-          <div class="about__img about__img--tall about__cell-fader">
-            <img src="assets/banners/inicio/Transformando a Saúde/01.png" class="about__fader-img" alt="COAPH" />
-            <img src="assets/banners/inicio/Transformando a Saúde/02.png" class="about__fader-img" alt="COAPH" />
-            <img src="assets/banners/inicio/Transformando a Saúde/03.jpeg" class="about__fader-img" alt="COAPH" />
-            <img src="assets/banners/inicio/Transformando a Saúde/04.png" class="about__fader-img" alt="COAPH" />
-            <img src="assets/banners/inicio/Transformando a Saúde/05.png" class="about__fader-img" alt="COAPH" />
-            <img src="assets/banners/inicio/Transformando a Saúde/06.png" class="about__fader-img" alt="COAPH" />
-            <img src="assets/banners/inicio/Transformando a Saúde/07.png" class="about__fader-img" alt="COAPH" />
-            <img src="assets/banners/inicio/Transformando a Saúde/08.png" class="about__fader-img" alt="COAPH" />
-            <img src="assets/banners/inicio/Transformando a Saúde/09.png" class="about__fader-img" alt="COAPH" />
-            <img src="assets/banners/inicio/Transformando a Saúde/10.png" class="about__fader-img" alt="COAPH" />
-            <img src="assets/banners/inicio/Transformando a Saúde/11.png" class="about__fader-img" alt="COAPH" />
+  <section class="about-home" id="sobre">
+    <div class="container about-home__inner">
+
+      <div class="about-home__content">
+        <h2 class="about-home__title">A Cooperativa que Move Organizações para Frente</h2>
+        <p class="about-home__text">Fundada em 2019, a COPAD reúne profissionais qualificados para áreas administrativas de empresas e órgãos públicos em todo o Brasil — com ética, eficiência e resultados reais.</p>
+
+        <div class="about-home__stats">
+          <div class="about-stat">
+            <strong>2019</strong>
+            <span>Ano de fundação</span>
           </div>
-          <div class="about__img about__img--tall about__cell-fader">
-            <img src="assets/banners/inicio/Transformando a Saúde/01.png" class="about__fader-img" alt="COAPH" />
-            <img src="assets/banners/inicio/Transformando a Saúde/02.png" class="about__fader-img" alt="COAPH" />
-            <img src="assets/banners/inicio/Transformando a Saúde/03.jpeg" class="about__fader-img" alt="COAPH" />
-            <img src="assets/banners/inicio/Transformando a Saúde/04.png" class="about__fader-img" alt="COAPH" />
-            <img src="assets/banners/inicio/Transformando a Saúde/05.png" class="about__fader-img" alt="COAPH" />
-            <img src="assets/banners/inicio/Transformando a Saúde/06.png" class="about__fader-img" alt="COAPH" />
-            <img src="assets/banners/inicio/Transformando a Saúde/07.png" class="about__fader-img" alt="COAPH" />
-            <img src="assets/banners/inicio/Transformando a Saúde/08.png" class="about__fader-img" alt="COAPH" />
-            <img src="assets/banners/inicio/Transformando a Saúde/09.png" class="about__fader-img" alt="COAPH" />
-            <img src="assets/banners/inicio/Transformando a Saúde/10.png" class="about__fader-img" alt="COAPH" />
-            <img src="assets/banners/inicio/Transformando a Saúde/11.png" class="about__fader-img" alt="COAPH" />
+          <div class="about-stat">
+            <strong>8+</strong>
+            <span>Áreas de atuação</span>
           </div>
-          <div class="about__img about__img--short about__cell-fader">
-            <img src="assets/banners/inicio/Transformando a Saúde/01.png" class="about__fader-img" alt="COAPH" />
-            <img src="assets/banners/inicio/Transformando a Saúde/02.png" class="about__fader-img" alt="COAPH" />
-            <img src="assets/banners/inicio/Transformando a Saúde/03.jpeg" class="about__fader-img" alt="COAPH" />
-            <img src="assets/banners/inicio/Transformando a Saúde/04.png" class="about__fader-img" alt="COAPH" />
-            <img src="assets/banners/inicio/Transformando a Saúde/05.png" class="about__fader-img" alt="COAPH" />
-            <img src="assets/banners/inicio/Transformando a Saúde/06.png" class="about__fader-img" alt="COAPH" />
-            <img src="assets/banners/inicio/Transformando a Saúde/07.png" class="about__fader-img" alt="COAPH" />
-            <img src="assets/banners/inicio/Transformando a Saúde/08.png" class="about__fader-img" alt="COAPH" />
-            <img src="assets/banners/inicio/Transformando a Saúde/09.png" class="about__fader-img" alt="COAPH" />
-            <img src="assets/banners/inicio/Transformando a Saúde/10.png" class="about__fader-img" alt="COAPH" />
-            <img src="assets/banners/inicio/Transformando a Saúde/11.png" class="about__fader-img" alt="COAPH" />
-          </div>
-          <div class="about__img about__img--short about__cell-fader">
-            <img src="assets/banners/inicio/Transformando a Saúde/01.png" class="about__fader-img" alt="COAPH" />
-            <img src="assets/banners/inicio/Transformando a Saúde/02.png" class="about__fader-img" alt="COAPH" />
-            <img src="assets/banners/inicio/Transformando a Saúde/03.jpeg" class="about__fader-img" alt="COAPH" />
-            <img src="assets/banners/inicio/Transformando a Saúde/04.png" class="about__fader-img" alt="COAPH" />
-            <img src="assets/banners/inicio/Transformando a Saúde/05.png" class="about__fader-img" alt="COAPH" />
-            <img src="assets/banners/inicio/Transformando a Saúde/06.png" class="about__fader-img" alt="COAPH" />
-            <img src="assets/banners/inicio/Transformando a Saúde/07.png" class="about__fader-img" alt="COAPH" />
-            <img src="assets/banners/inicio/Transformando a Saúde/08.png" class="about__fader-img" alt="COAPH" />
-            <img src="assets/banners/inicio/Transformando a Saúde/09.png" class="about__fader-img" alt="COAPH" />
-            <img src="assets/banners/inicio/Transformando a Saúde/10.png" class="about__fader-img" alt="COAPH" />
-            <img src="assets/banners/inicio/Transformando a Saúde/11.png" class="about__fader-img" alt="COAPH" />
+          <div class="about-stat">
+            <strong>100%</strong>
+            <span>Foco em resultados</span>
           </div>
         </div>
+
       </div>
-      <div class="about__content">
-        <p class="section-label">// Quem Somos</p>
-        <h2 class="about__headline">Transformando a <span>Saúde</span><br/>em Cooperativismo</h2>
-        <p class="about__text">Fundada em 2009 por sete médicos comprometidos com a transformação da saúde, a COAPH é sinônimo de inovação, excelência e sustentabilidade. Nossa missão é oferecer serviços de saúde com qualidade, promovendo oportunidades e otimizando recursos de forma sustentável.</p>
-        <div class="about__stats">
-          <div class="about__stat"><strong>+47 mil</strong><span>Cooperados</span></div>
-          <div class="about__stat"><strong>+180</strong><span>Contratos</span></div>
-          <div class="about__stat"><strong>100%</strong><span>Foco no Cooperado</span></div>
+
+      <div class="about-home__visual">
+        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&h=640&q=80" alt="Equipe COPAD em ambiente de trabalho" />
+        <div class="about-home__stat-box">
+          <strong>+5 anos</strong>
+          <span>transformando organizações</span>
         </div>
-        <a href="#" class="btn btn--red">Saiba Mais</a>
       </div>
+
     </div>
   </section>
 
-  <!-- NOSSOS VALORES / SERVICES CARDS -->
-  <section class="services" id="valores">
+  <!-- SOLUÇÕES PARA SUA ORGANIZAÇÃO -->
+  <section class="services-home" id="servicos">
     <div class="container">
-      <div class="services__header">
-        <div class="services__header-left">
-          <p class="section-label">// Nossos Valores</p>
-          <h2 class="services__headline">Valores que fazem<br><span>a Diferença!</span></h2>
-          <a href="#" class="services__view-all">Ver Todos →</a>
-        </div>
-        <div class="services__header-img">
-          <img src="assets/banners/inicio/Valores que Fazem a Diferença/Restaura_a_foto_da_nossa_202606151753.jpeg" alt="Nossos Valores" />
-        </div>
+      <div class="section-hd">
+        <h2 class="section-title">Soluções para Sua Organização</h2>
+        <p class="section-sub">Profissionais especializados em 8 áreas administrativas para atender qualquer demanda.</p>
       </div>
-      <div class="services__grid">
+      <div class="services-grid">
         <div class="service-card">
-          <div class="service-card__icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="3" x2="12" y2="20"/><path d="M9 21h6"/><path d="M4 7h16"/><path d="M4 7l-2 7a4 4 0 0 0 4 0l-2-7"/><path d="M20 7l-2 7a4 4 0 0 0 4 0l-2-7"/></svg></div>
-          <h3 class="service-card__title">Legalidade Jurídica</h3>
-          <p class="service-card__desc">Segurança e respaldo legal para todas as suas atividades profissionais como cooperado na área da saúde.</p>
-          <a href="#" class="service-card__link">Saiba mais →</a>
+          <div class="service-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          </div>
+          <h3 class="service-card__title">Administração Geral</h3>
+          <p class="service-card__desc">Assistentes, analistas e gestores para suporte administrativo completo.</p>
+          <a href="pre-cadastro.html" class="service-card__link">Saiba Mais <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></a>
         </div>
         <div class="service-card">
-          <div class="service-card__icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11h3l2 -2 3 3 2 -2 2 2h3"/><path d="M4 11v4l2 2 1 1 4 2 4 -2 1 -1 2 -2v-4"/><path d="M10 9v2"/><path d="M14 9v2"/></svg></div>
-          <h3 class="service-card__title">Valorização Profissional</h3>
-          <p class="service-card__desc">Programas de incentivo que reconhecem e desenvolvem continuamente nossos cooperados em todo o Brasil.</p>
-          <a href="#" class="service-card__link">Saiba mais →</a>
+          <div class="service-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3 class="service-card__title">Recursos Humanos</h3>
+          <p class="service-card__desc">Recrutamento, departamento pessoal e gestão estratégica de pessoas.</p>
+          <a href="pre-cadastro.html" class="service-card__link">Saiba Mais <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></a>
         </div>
         <div class="service-card">
-          <div class="service-card__icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3z"/><path d="M7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></div>
-          <h3 class="service-card__title">Garantias por Lei</h3>
-          <p class="service-card__desc">Benefícios e garantias sólidas asseguradas pela legislação cooperativista brasileira para todos os associados.</p>
-          <a href="#" class="service-card__link">Saiba mais →</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- COMO FUNCIONA / WORK PROCESS -->
-  <section class="process" id="como-funciona">
-    <div class="container">
-      <div class="process__top">
-        <p class="section-label">// Como Funciona</p>
-        <h2 class="process__headline">Nosso Processo <span>Comprovado</span></h2>
-      </div>
-      <div class="process__steps">
-        <div class="process__step">
-          <div class="process__icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M9 14l2 2 4-4"/></svg>
-            <span class="process__num">01</span>
+          <div class="service-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
           </div>
-          <h4>Pré-Cadastro</h4>
-          <p>Inicie sua jornada realizando o pré-cadastro no portal digital de forma rápida.</p>
+          <h3 class="service-card__title">Financeiro</h3>
+          <p class="service-card__desc">Contas a pagar/receber, faturamento e análise financeira.</p>
+          <a href="pre-cadastro.html" class="service-card__link">Saiba Mais <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></a>
         </div>
-        <div class="process__step">
-          <div class="process__icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M6 20v-2a6 6 0 0 1 12 0v2"/></svg>
-            <span class="process__num">02</span>
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.06 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 5.99 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16z"/></svg>
           </div>
-          <h4>Portal do Cooperado</h4>
-          <p>Acesse o portal exclusivo com todas as ferramentas para gerenciar sua cooperação.</p>
+          <h3 class="service-card__title">Comercial</h3>
+          <p class="service-card__desc">Atendimento, relacionamento com clientes e suporte a vendas.</p>
+          <a href="pre-cadastro.html" class="service-card__link">Saiba Mais <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></a>
         </div>
-        <div class="process__step">
-          <div class="process__icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="15" x2="15" y2="15"/></svg>
-            <span class="process__num">03</span>
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
           </div>
-          <h4>Termo de Adesão</h4>
-          <p>Assine o termo e torne-se oficialmente um cooperado COAPH com todos os direitos.</p>
+          <h3 class="service-card__title">Licitações e Contratos</h3>
+          <p class="service-card__desc">Analistas de licitação e gestão contratual para setor público e privado.</p>
+          <a href="pre-cadastro.html" class="service-card__link">Saiba Mais <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></a>
         </div>
-        <div class="process__step">
-          <div class="process__icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="6" r="3"/><path d="M6 21v-2a5 5 0 0 1 10 0v2"/><path d="M15 9.5c0 0 .5 2 2 2.5"/><circle cx="17.5" cy="13" r="1.5" fill="currentColor" stroke="none"/></svg>
-            <span class="process__num">04</span>
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
           </div>
-          <h4>Atuação Profissional</h4>
-          <p>Comece a atuar com suporte completo e o respaldo jurídico da COAPH.</p>
+          <h3 class="service-card__title">Serviços de Escritório</h3>
+          <p class="service-card__desc">Recepção, secretariado, arquivistas e auxiliares de escritório.</p>
+          <a href="pre-cadastro.html" class="service-card__link">Saiba Mais <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></a>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <h3 class="service-card__title">Logística e Almoxarifado</h3>
+          <p class="service-card__desc">Controle de estoque e apoio logístico com eficiência operacional.</p>
+          <a href="pre-cadastro.html" class="service-card__link">Saiba Mais <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></a>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <h3 class="service-card__title">Serviços Gerais</h3>
+          <p class="service-card__desc">Limpeza, portaria, recepção, jardinagem e manutenção predial.</p>
+          <a href="pre-cadastro.html" class="service-card__link">Saiba Mais <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ÚLTIMAS NOTÍCIAS -->
-  <section class="noticias" id="noticias">
+  <!-- DIFERENCIAIS -->
+  <section class="differentials" id="diferenciais">
     <div class="container">
-      <div class="noticias__header">
-        <h2 class="noticias__headline">Últimas <span>Notícias</span></h2>
+      <div class="diff__hd">
+        <h2 class="diff__title">Diferenciais que Fazem a Diferença</h2>
+        <p class="diff__sub">O que torna a COPAD a parceira ideal para a sua organização.</p>
       </div>
-      <div class="noticias__grid">
-        <article class="noticias__card">
-          <div class="noticias__thumb">
-            <span class="noticias__tag noticias__tag--dark">SAÚDE</span>
-            <img src="assets/banners/inicio/ultimas noticias/01.png" alt="Hospital Hdoc: Serviço completo de Traumatologia" class="noticias__img" />
+      <div class="differentials__grid">
+        <div class="diff-item">
+          <div class="diff-item__check">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
           </div>
-          <div class="noticias__body">
-            <h3>Hospital Hdoc: Serviço completo de Traumatologia</h3>
-            <a href="blog-traumatologia.html" class="noticias__link">SAIBA MAIS</a>
-            <p class="noticias__meta" data-comment-slug="traumatologia">Janeiro 27, 2025 &bull; Nenhum comentário</p>
+          <div>
+            <div class="diff-item__title">Gestão Cooperativa Profissional</div>
+            <p class="diff-item__text">Governança sólida e participação democrática dos cooperados.</p>
           </div>
-        </article>
-        <article class="noticias__card">
-          <div class="noticias__thumb">
-            <span class="noticias__tag noticias__tag--dark">SAÚDE</span>
-            <img src="assets/banners/inicio/ultimas noticias/02.png" alt="Hdoc Lar, conheça nossos serviços" class="noticias__img" />
+        </div>
+        <div class="diff-item">
+          <div class="diff-item__check">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
           </div>
-          <div class="noticias__body">
-            <h3>Hdoc Lar, conheça nossos serviços</h3>
-            <a href="blog-hdoc-lar.html" class="noticias__link">SAIBA MAIS</a>
-            <p class="noticias__meta" data-comment-slug="hdoc-lar">Janeiro 27, 2025 &bull; Nenhum comentário</p>
+          <div>
+            <div class="diff-item__title">Equipe Qualificada</div>
+            <p class="diff-item__text">Seleção rigorosa com critérios técnicos e comportamentais.</p>
           </div>
-        </article>
-        <article class="noticias__card">
-          <div class="noticias__thumb">
-            <span class="noticias__tag noticias__tag--dark">SAÚDE</span>
-            <img src="assets/banners/inicio/ultimas noticias/03.png" alt="Especialidades Hdoc Clínicas" class="noticias__img" />
+        </div>
+        <div class="diff-item">
+          <div class="diff-item__check">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
           </div>
-          <div class="noticias__body">
-            <h3>Especialidades Hdoc Clínicas</h3>
-            <a href="blog-especialidades-clinicas.html" class="noticias__link">SAIBA MAIS</a>
-            <p class="noticias__meta" data-comment-slug="especialidades-clinicas">Janeiro 24, 2025 &bull; Nenhum comentário</p>
+          <div>
+            <div class="diff-item__title">Conformidade Legal</div>
+            <p class="diff-item__text">Atuação 100% em conformidade com a legislação vigente.</p>
           </div>
-        </article>
+        </div>
+        <div class="diff-item">
+          <div class="diff-item__check">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <div>
+            <div class="diff-item__title">Flexibilidade</div>
+            <p class="diff-item__text">Soluções customizadas para cada cliente e demanda.</p>
+          </div>
+        </div>
+        <div class="diff-item">
+          <div class="diff-item__check">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <div>
+            <div class="diff-item__title">Atendimento Personalizado</div>
+            <p class="diff-item__text">Suporte dedicado e comunicação direta com especialistas.</p>
+          </div>
+        </div>
+        <div class="diff-item">
+          <div class="diff-item__check">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <div>
+            <div class="diff-item__title">Foco em Resultados</div>
+            <p class="diff-item__text">Indicadores de desempenho e melhoria contínua garantidos.</p>
+          </div>
+        </div>
       </div>
-      <div class="noticias__more">
-        <a href="blog.html" class="btn noticias__more-btn">Mais notícias aqui</a>
+    </div>
+  </section>
+
+  <!-- NOTÍCIAS E NOVIDADES -->
+  <section class="news-home" id="noticias">
+    <div class="container">
+      <div class="section-hd">
+        <h2 class="section-title">Notícias e Novidades</h2>
+        <p class="section-sub">Insights sobre cooperativismo, gestão e mercado administrativo.</p>
+      </div>
+      <div class="news-grid">
+        <article class="news-card">
+          <div class="news-card__img">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&h=420&q=80" alt="Cooperativismo cresce e gera novas oportunidades" />
+            <span class="news-card__cat">Cooperativismo</span>
+          </div>
+          <div class="news-card__body">
+            <div class="news-card__date">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              15 Jun 2025
+            </div>
+            <h3 class="news-card__title">Cooperativismo cresce e gera novas oportunidades no setor administrativo</h3>
+            <a href="blog.html" class="news-card__link">Ler mais <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></a>
+          </div>
+        </article>
+        <article class="news-card">
+          <div class="news-card__img">
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&h=420&q=80" alt="Como uma boa gestão administrativa transforma resultados" />
+            <span class="news-card__cat">Gestão</span>
+          </div>
+          <div class="news-card__body">
+            <div class="news-card__date">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              08 Jun 2025
+            </div>
+            <h3 class="news-card__title">Como uma boa gestão administrativa transforma resultados organizacionais</h3>
+            <a href="blog.html" class="news-card__link">Ler mais <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></a>
+          </div>
+        </article>
+        <article class="news-card">
+          <div class="news-card__img">
+            <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=800&h=420&q=80" alt="Terceirização responsável: conformidade legal" />
+            <span class="news-card__cat">Terceirização</span>
+          </div>
+          <div class="news-card__body">
+            <div class="news-card__date">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              01 Jun 2025
+            </div>
+            <h3 class="news-card__title">Terceirização responsável: conformidade legal e vantagens para sua empresa</h3>
+            <a href="blog.html" class="news-card__link">Ler mais <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></a>
+          </div>
+        </article>
+        <article class="news-card">
+          <div class="news-card__img">
+            <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=800&h=420&q=80" alt="COPAD expande atuação e fortalece presença" />
+            <span class="news-card__cat">COPAD</span>
+          </div>
+          <div class="news-card__body">
+            <div class="news-card__date">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              22 Mai 2025
+            </div>
+            <h3 class="news-card__title">COPAD expande atuação e fortalece presença em novas regiões do Brasil</h3>
+            <a href="blog.html" class="news-card__link">Ler mais <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></a>
+          </div>
+        </article>
       </div>
     </div>
   </section>
 
   <!-- MAPA -->
   <section class="mapa" id="mapa">
-    <div class="mapa__placeholder" id="mapaPlaceholder">
-      <img src="assets/banners/inicio/maps/image.png" alt="Ver no mapa" class="mapa__placeholder-img" />
-      <div class="mapa__placeholder-btn">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
-        Ver no mapa
-      </div>
-    </div>
-    <iframe
-      id="mapaIframe"
-      class="mapa__iframe"
-      src=""
-      data-src="https://maps.google.com/maps?q=Rua+Joaquim+Sá,+538,+Joaquim+Távora,+Fortaleza,+CE,+Brasil&output=embed&hl=pt-BR&z=16"
-      width="100%"
-      height="400"
-      style="border:0;"
+<iframe
+      class="mapa__frame"
+      src="https://maps.google.com/maps?q=Rua+Joaquim+Sá,+538,+Joaquim+Távora,+Fortaleza,+CE,+Brasil&output=embed&hl=pt-BR&z=16"
       allowfullscreen
+      loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"
-      title="Localização COAPH – R. Joaquim Sá, 538, Fortaleza-CE">
+      title="Localização COPAD – R. Joaquim Sá, 538, Fortaleza-CE">
     </iframe>
   </section>
 
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer__grid">
-      <div class="footer__col">
-        <h4>Institucional</h4>
-        <ul>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="pre-cadastro.html">Pré-Cadastro</a></li>
-          <li><a href="trabalhe-conosco.html">Trabalhe Conosco</a></li>
-        </ul>
+
+      <!-- Col 1: Brand -->
+      <div class="footer__col footer__col--brand">
         <div class="footer__logo-mark">
-          <img src="assets/logotipo/coaph logo branco.png" alt="COAPH" class="footer__logo-img" />
+          <img src="assets/logotipo/logo-copad-branca.webp" alt="COPAD" class="footer__logo-img" />
+        </div>
+        <p class="footer__tagline">PROFISSIONAIS QUE FAZEM A DIFEREN&Ccedil;A</p>
+        <p class="footer__desc">Cooperativa de Profissionais Administrativos com atua&ccedil;&atilde;o em todo o Brasil.</p>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="#" class="footer__social-link" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="#" class="footer__social-link" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://wa.me/558530393030" class="footer__social-link" aria-label="WhatsApp" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+          </a>
         </div>
       </div>
+
+      <!-- Col 2: Menu -->
       <div class="footer__col">
-        <h4>Entre em contato</h4>
-        <p>Telefone: <a href="tel:08530393030">(85) 3039-3030</a></p>
-        <p>E-mail: <a href="mailto:faleconosco@coaph.com.br">faleconosco@coaph.com.br</a></p>
-        <p class="footer__address">MATRIZ – Rua Joaquim Sá, 538 – Joaquim Távora – Fortaleza – CE, 60135-218 CNPJ: 11.769.319/0001-88</p>
+        <h4>Menu</h4>
+        <ul>
+          <li><a href="index.html">In&iacute;cio</a></li>
+          <li><a href="sobre.html">A COPAD</a></li>
+          <li><a href="pre-cadastro.html">Servi&ccedil;os</a></li>
+          <li><a href="governanca.html">Transpar&ecirc;ncia</a></li>
+          <li><a href="blog.html">Not&iacute;cias</a></li>
+          <li><a href="ouvidoria.html">Contato</a></li>
+        </ul>
       </div>
-      <div class="footer__col footer__newsletter">
-        <h4>Assine nossa Newsletter</h4>
-        <div class="newsletter__form">
-          <input type="text" placeholder="Nome" />
-          <input type="email" placeholder="E-mail" />
-          <label class="newsletter__check">
-            <input type="checkbox" />
-            <span>Aceito receber e-mails promocionais da Coaph</span>
-          </label>
-          <button class="btn btn--red btn--full">Assinar newsletter</button>
+
+      <!-- Col 3: Serviços -->
+      <div class="footer__col">
+        <h4>Servi&ccedil;os</h4>
+        <ul>
+          <li><a href="#">Administra&ccedil;&atilde;o Geral</a></li>
+          <li><a href="#">Recursos Humanos</a></li>
+          <li><a href="#">Financeiro</a></li>
+          <li><a href="#">Licita&ccedil;&otilde;es</a></li>
+          <li><a href="#">Log&iacute;stica</a></li>
+          <li><a href="#">Servi&ccedil;os Gerais</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Contato -->
+      <div class="footer__col">
+        <h4>Contato</h4>
+        <div class="footer__contact-list">
+          <div class="footer__contact-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.85a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:08000000000">(85) 0800-0000</a>
+          </div>
+          <div class="footer__contact-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+            <a href="mailto:copadcomercial@gmail.com">copadcomercial@gmail.com</a>
+          </div>
+          <div class="footer__contact-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            <a href="https://www.copad.coop.br" target="_blank" rel="noopener">www.copad.coop.br</a>
+          </div>
+          <div class="footer__contact-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Fortaleza &ndash; CE &middot; Brasil</span>
+          </div>
         </div>
       </div>
+
     </div>
-    <div class="footer__bottom">
-      <p>Coaph 2026 © Todos os direitos reservados.</p>
+    <div class="container footer__bottom">
+      <p>&copy; 2026 COPAD &ndash; Cooperativa de Profissionais Administrativos. Todos os direitos reservados.</p>
+      <div class="footer__bottom-links">
+        <a href="#">Pol&iacute;tica de Privacidade</a>
+        <a href="#">Termos de Uso</a>
+      </div>
     </div>
   </footer>
 
@@ -514,4 +484,11 @@
   </script>
 </body>
 </html>
+
+
+
+
+
+
+
 
